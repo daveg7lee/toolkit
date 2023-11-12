@@ -20,7 +20,7 @@ export default function MyIP({ ip }: IMyIPProps) {
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
         Your IP Address is...
       </Text>
-      <Heading fontSize="9xl" onClick={copyIPAddress}>
+      <Heading fontSize="8xl" onClick={copyIPAddress} wordBreak="break-all">
         {ip}
       </Heading>
     </Center>
