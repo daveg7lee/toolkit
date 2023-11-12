@@ -23,15 +23,15 @@ export default function MyIP({ ip }: IMyIPProps) {
         description="Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!"
         openGraph={{
           type: "website",
-          url: "What is my IP?",
+          url: "https://equipage.vercel.app/my-ip",
           title: "What is my IP?",
           description:
             "Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!",
           images: [
             {
               url: "/share.png",
-              width: 800,
-              height: 400,
+              width: 1200,
+              height: 630,
             },
           ],
         }}
