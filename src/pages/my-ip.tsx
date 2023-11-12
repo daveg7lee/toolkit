@@ -1,3 +1,4 @@
+import KakaoAdFit from "@/components/KakaoAdfit";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import { GetServerSidePropsContext } from "next";
 import { NextSeo } from "next-seo";
@@ -40,6 +41,9 @@ export default function MyIP({ ip }: IMyIPProps) {
           ],
         }}
       />
+      <Box position="absolute" top={0}>
+        <KakaoAdFit />
+      </Box>
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
         Your IP Address is...
       </Text>
@@ -52,7 +56,7 @@ export default function MyIP({ ip }: IMyIPProps) {
         {ip}
       </Heading>
       <Box
-        maxW={["90%", "80%", "60%"]}
+        maxW={["320px", "728px"]}
         mt="8"
         borderTop="1px solid"
         borderColor="gray.300"
