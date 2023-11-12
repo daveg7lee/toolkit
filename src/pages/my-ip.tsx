@@ -27,6 +27,13 @@ export default function MyIP({ ip }: IMyIPProps) {
           title: "What is my IP?",
           description:
             "Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!",
+          images: [
+            {
+              url: "/share.png",
+              width: 800,
+              height: 400,
+            },
+          ],
         }}
       />
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
