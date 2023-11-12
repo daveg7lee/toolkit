@@ -1,4 +1,4 @@
-import { Center, Heading, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import { GetServerSidePropsContext } from "next";
 import { NextSeo } from "next-seo";
 
@@ -52,6 +52,30 @@ export default function MyIP({ ip }: IMyIPProps) {
       >
         {ip}
       </Heading>
+      <Box
+        maxW={["90%", "80%", "60%"]}
+        mt="8"
+        borderTop="1px solid"
+        borderColor="gray.300"
+        pt="8"
+      >
+        <Text fontWeight="semibold" mb="2">
+          What is IP?
+        </Text>
+        <Text fontSize="sm">
+          An IP address is like your home address, but for your computer or
+          phone when they talk to each other over the internet. Just like the
+          mailman needs your home address to deliver your mail, computers use IP
+          addresses to send information to the right place. There are two kinds:
+          one is short and has numbers and dots (IPv4), and the other is long
+          with numbers and letters and uses colons (IPv6) because we have so
+          many devices now that we need more addresses. Sometimes your device
+          keeps the same IP address, like your home doesn't move, but sometimes
+          it changes, like if you go on a vacation. It's a special code that
+          helps make sure the information on the internet goes to the right
+          computer.
+        </Text>
+      </Box>
     </Center>
   );
 }
