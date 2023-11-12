@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://equipage.vercel.app
+
+# Sitemaps
+Sitemap: https://equipage.vercel.app/sitemap.xml
