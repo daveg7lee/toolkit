@@ -33,6 +33,11 @@ export default function MyIP({ ip }: IMyIPProps) {
               width: 1200,
               height: 630,
             },
+            {
+              url: "/600x315.png",
+              width: 600,
+              height: 315,
+            },
           ],
         }}
       />
