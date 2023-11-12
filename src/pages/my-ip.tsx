@@ -20,13 +20,12 @@ export default function MyIP({ ip }: IMyIPProps) {
     <Center h="100vh" flexDir="column">
       <NextSeo
         title="What is my IP?"
-        description="Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!"
+        description="Effortlessly Find Your IP Address with Just One Click"
         openGraph={{
           type: "website",
           url: "https://equipage.vercel.app/my-ip",
           title: "What is my IP?",
-          description:
-            "Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!",
+          description: "Effortlessly Find Your IP Address with Just One Click",
           images: [
             {
               url: "/share.png",
