@@ -1,5 +1,6 @@
 import { Center, Heading, Text } from "@chakra-ui/react";
 import { GetServerSidePropsContext } from "next";
+import { NextSeo } from "next-seo";
 
 interface IMyIPProps {
   ip: string;
@@ -17,6 +18,17 @@ export default function MyIP({ ip }: IMyIPProps) {
 
   return (
     <Center h="100vh" flexDir="column">
+      <NextSeo
+        title="What is my IP?"
+        description="Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!"
+        openGraph={{
+          type: "website",
+          url: "What is my IP?",
+          title: "What is my IP?",
+          description:
+            "Discover Your IP Address Instantly with a Single Click – Fast, Easy, and Accurate!",
+        }}
+      />
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
         Your IP Address is...
       </Text>
