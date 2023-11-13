@@ -21,16 +21,17 @@ export default function ShortenURL() {
   const onClickButton = async () => {
     if (!value || value === "") return;
 
-    const regex =
-      /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
-
-    if (!regex.test(value)) {
-      alert("Please write a valid URL");
-      return;
-    }
-
     try {
       setLoading(true);
+
+      const regex =
+        /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()!@:%_\+.~#?&\/\/=]*)/;
+
+      if (!regex.test(value)) {
+        alert("Please write a valid URL");
+        setLoading(false);
+        return;
+      }
 
       const res = await fetch(
         `${
