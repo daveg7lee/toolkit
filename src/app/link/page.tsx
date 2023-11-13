@@ -83,7 +83,7 @@ export default function ShortenURL() {
         }}
       />
       <Text fontSize="2xl" fontWeight="semibold" color="gray.600">
-        Shorten your link!
+        🔗 Shorten your link!
       </Text>
       <HStack>
         <Input

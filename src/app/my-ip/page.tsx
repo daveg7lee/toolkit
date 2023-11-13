@@ -60,7 +60,7 @@ export default function MyIP() {
         }}
       />
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
-        Your IP Address is...
+        🌎 Your IP Address is...
       </Text>
       <Heading
         fontSize="8xl"
