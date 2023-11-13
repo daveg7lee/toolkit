@@ -12,6 +12,10 @@ export default function Document() {
           name="naver-site-verification"
           content="1f6dfb8478b3a0b69aad315ae0d3bf1d46e25cc6"
         />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-4793524087489955"
+        ></meta>
       </Head>
       <body>
         <Main />
