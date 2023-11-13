@@ -54,7 +54,7 @@ export default function ShortenURL() {
         `${
           process.env.NODE_ENV === "development"
             ? "http://localhost:3000"
-            : "https://www.equipage.dev"
+            : "https://equipage.dev"
         }/${json.id}`
       );
     } catch (e) {

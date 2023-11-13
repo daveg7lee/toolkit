@@ -1,31 +1,21 @@
-"use client";
-
 import Footer from "@/components/Footer";
+import IP from "@/components/IP";
 import KakaoAdFit from "@/components/KakaoAdfit";
-import { Box, Center, Heading, Text } from "@chakra-ui/react";
-import axios from "axios";
-import { NextSeo } from "next-seo";
-import { useEffect, useState } from "react";
+import { Box, Center, Text } from "@chakra-ui/react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Equipage | What is my IP?",
+  description: "Effortlessly Find Your IP Address with Just One Click",
+  openGraph: {
+    type: "website",
+    url: "https://www.equipage.dev/my-ip",
+    title: "Equipage | What is my IP?",
+    description: "Effortlessly Find Your IP Address with Just One Click",
+  },
+};
 
 export default function MyIP() {
-  const [data, setData] = useState<{ ip_address: string }>();
-
-  const getIPData = async () => {
-    const res = await axios.get(
-      `${
-        process.env.NODE_ENV === "development"
-          ? "http://localhost:3000"
-          : "https://www.equipage.dev"
-      }/my-ip/api`
-    );
-
-    setData(res.data);
-  };
-
-  useEffect(() => {
-    getIPData();
-  }, []);
-
   // const copyIPAddress = async () => {
   //   try {
   //     await navigator.clipboard.writeText(data.ip_address);
@@ -37,39 +27,10 @@ export default function MyIP() {
 
   return (
     <Center h="100vh" flexDir="column" px="6">
-      <NextSeo
-        title="What is my IP?"
-        description="Effortlessly Find Your IP Address with Just One Click"
-        openGraph={{
-          type: "website",
-          url: "https://www.equipage.dev/my-ip",
-          title: "What is my IP?",
-          description: "Effortlessly Find Your IP Address with Just One Click",
-          images: [
-            {
-              url: "/share.png",
-              width: 1200,
-              height: 630,
-            },
-            {
-              url: "/600x315.png",
-              width: 600,
-              height: 315,
-            },
-          ],
-        }}
-      />
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
         🌎 Your IP Address is...
       </Text>
-      <Heading
-        fontSize="8xl"
-        // onClick={copyIPAddress}
-        wordBreak="break-all"
-        textAlign="center"
-      >
-        {data?.ip_address}
-      </Heading>
+      <IP />
       <Box
         maxW={["320px", "728px"]}
         mt="8"
