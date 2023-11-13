@@ -14,7 +14,7 @@ export default function MyIP() {
       `${
         process.env.NODE_ENV === "development"
           ? "http://localhost:3000"
-          : "https://equipage.dev/"
+          : "https://equipage.dev"
       }/my-ip/api`
     );
 
