@@ -1,49 +1,29 @@
+"use client";
+
 import KakaoAdFit from "@/components/KakaoAdfit";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
-import { Metadata } from "next";
+import axios from "axios";
+import { NextSeo } from "next-seo";
+import { useEffect, useState } from "react";
 
-export const metadata: Metadata = {
-  title: "What is my IP?",
-  description: "Effortlessly Find Your IP Address with Just One Click",
-  openGraph: {
-    type: "website",
-    url: "https://equipage.dev/my-ip",
-    title: "What is my IP?",
-    description: "Effortlessly Find Your IP Address with Just One Click",
-    images: [
-      {
-        url: "/share.png",
-        width: 1200,
-        height: 630,
-      },
-      {
-        url: "/600x315.png",
-        width: 600,
-        height: 315,
-      },
-    ],
-  },
-};
+export default function MyIP() {
+  const [data, setData] = useState<{ ip_address: string }>();
 
-const getIPData = async () => {
-  const res = await fetch(
-    `${
-      process.env.NODE_ENV === "development"
-        ? "http://localhost:3000"
-        : "https://equipage.dev/"
-    }/my-ip/api`
-  );
+  const getIPData = async () => {
+    const res = await axios.get(
+      `${
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:3000"
+          : "https://equipage.dev/"
+      }/my-ip/api`
+    );
 
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
-  }
+    setData(res.data);
+  };
 
-  return res.json();
-};
-
-export default async function MyIP() {
-  const data = await getIPData();
+  useEffect(() => {
+    getIPData();
+  }, []);
 
   // const copyIPAddress = async () => {
   //   try {
@@ -56,6 +36,28 @@ export default async function MyIP() {
 
   return (
     <Center h="100vh" flexDir="column">
+      <NextSeo
+        title="What is my IP?"
+        description="Effortlessly Find Your IP Address with Just One Click"
+        openGraph={{
+          type: "website",
+          url: "https://equipage.vercel.app/my-ip",
+          title: "What is my IP?",
+          description: "Effortlessly Find Your IP Address with Just One Click",
+          images: [
+            {
+              url: "/share.png",
+              width: 1200,
+              height: 630,
+            },
+            {
+              url: "/600x315.png",
+              width: 600,
+              height: 315,
+            },
+          ],
+        }}
+      />
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
         Your IP Address is...
       </Text>
@@ -65,7 +67,7 @@ export default async function MyIP() {
         wordBreak="break-all"
         textAlign="center"
       >
-        {data.ip_address}
+        {data?.ip_address}
       </Heading>
       <Box
         maxW={["320px", "728px"]}

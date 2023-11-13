@@ -10,7 +10,7 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { useState } from "react";
 
 export default function ShortenURL() {
@@ -68,22 +68,16 @@ export default function ShortenURL() {
       mx="auto"
       gap="22px"
     >
-      <Head>
-        <title>Shorten your link!</title>
-        <meta
-          name="description"
-          content="Effortlessly Shorten Your link with Just One Click"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.equipage.dev/link" />
-        <meta property="og:title" content="Shorten your link!" />
-        <meta
-          property="og:description"
-          content="Effortlessly Shorten Your link with Just One Click"
-        />
-        <meta property="og:site_name" content="Equipage" />
-        <meta property="og:locale" content="en_US" />
-      </Head>
+      <NextSeo
+        title="Shorten your link!"
+        description="Effortlessly Shorten Your link with Just One Click"
+        openGraph={{
+          type: "website",
+          url: "https://equipage.vercel.app/my-ip",
+          title: "https://www.equipage.dev/link",
+          description: "Effortlessly Shorten Your link with Just One Click",
+        }}
+      />
       <Text fontSize="2xl" fontWeight="semibold" color="gray.600">
         Shorten your link!
       </Text>
