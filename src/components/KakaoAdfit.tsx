@@ -2,7 +2,12 @@
 
 import React, { useEffect, useRef } from "react";
 
-export default function KakaoAdFit() {
+interface IKakaoAdfitProps {
+  unit_big: string;
+  unit_small: string;
+}
+
+export default function KakaoAdFit({ unit_big, unit_small }: IKakaoAdfitProps) {
   // 최초 1회만 광고를 불러오기 위한 변수
   const adRef = useRef<boolean>(false);
 
@@ -23,11 +28,11 @@ export default function KakaoAdFit() {
     if (winodwSize < 1024) {
       ins.setAttribute("data-ad-width", "320");
       ins.setAttribute("data-ad-height", "100");
-      ins.setAttribute("data-ad-unit", "DAN-Qdw5xOlsJkt2UMXm");
+      ins.setAttribute("data-ad-unit", unit_small);
     } else {
       ins.setAttribute("data-ad-width", "728");
       ins.setAttribute("data-ad-height", "90");
-      ins.setAttribute("data-ad-unit", "DAN-YCV4ENi87zDLZf0T");
+      ins.setAttribute("data-ad-unit", unit_big);
     }
 
     script.async = true;

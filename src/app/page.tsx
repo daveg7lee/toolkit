@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Center flexDir="column" h="100vh">
-      <Heading mb="16" fontSize="5xl">
-        Equipage
+      <Heading mb="10" fontSize="5xl">
+        🧰 Equipage
       </Heading>
       <SimpleGrid columns={[1, 2, 3, 4]} gap="12px">
         <Link href="/my-ip">
@@ -30,7 +31,7 @@ export default function Home() {
             fontSize="lg"
             fontWeight="semibold"
           >
-            What is my IP?
+            🌎 What is my IP?
           </Box>
         </Link>
         <Link href="/link">
@@ -43,10 +44,11 @@ export default function Home() {
             fontSize="lg"
             fontWeight="semibold"
           >
-            Shorten your link!
+            🔗 Shorten your link!
           </Box>
         </Link>
       </SimpleGrid>
+      <Footer />
     </Center>
   );
 }

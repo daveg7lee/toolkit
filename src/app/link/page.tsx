@@ -1,7 +1,9 @@
 "use client";
 
+import KakaoAdFit from "@/components/KakaoAdfit";
 import { copyToclipboard } from "@/utils";
 import {
+  Box,
   Button,
   Center,
   CircularProgress,
@@ -111,6 +113,12 @@ export default function ShortenURL() {
           </Button>
         </HStack>
       )}
+      <Box position="absolute" bottom={0}>
+        <KakaoAdFit
+          unit_big="DAN-tUahvotQFhWZyh41"
+          unit_small="DAN-ONaUt6yWfIY6Q9aY"
+        />
+      </Box>
     </Center>
   );
 }

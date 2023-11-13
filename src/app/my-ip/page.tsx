@@ -94,7 +94,10 @@ export default function MyIP() {
         </Text>
       </Box>
       <Box position="absolute" bottom={0}>
-        <KakaoAdFit />
+        <KakaoAdFit
+          unit_big="DAN-YCV4ENi87zDLZf0T"
+          unit_small="DAN-Qdw5xOlsJkt2UMXm"
+        />
       </Box>
     </Center>
   );
