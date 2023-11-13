@@ -37,7 +37,7 @@ export default function ShortenURL() {
         `${
           process.env.NODE_ENV === "development"
             ? "http://localhost:3000"
-            : "https://equipage.dev"
+            : "https://www.equipage.dev"
         }/link/api`,
         {
           method: "POST",
@@ -51,7 +51,7 @@ export default function ShortenURL() {
         `${
           process.env.NODE_ENV === "development"
             ? "http://localhost:3000"
-            : "https://equipage.dev"
+            : "https://www.equipage.dev"
         }/${json.id}`
       );
     } catch (e) {
@@ -74,8 +74,8 @@ export default function ShortenURL() {
         description="Effortlessly Shorten Your link with Just One Click"
         openGraph={{
           type: "website",
-          url: "https://equipage.vercel.app/my-ip",
-          title: "https://www.equipage.dev/link",
+          url: "https://www.equipage.dev/my-ip",
+          title: "Shorten your link!",
           description: "Effortlessly Shorten Your link with Just One Click",
         }}
       />

@@ -14,7 +14,7 @@ export default function MyIP() {
       `${
         process.env.NODE_ENV === "development"
           ? "http://localhost:3000"
-          : "https://equipage.dev"
+          : "https://www.equipage.dev"
       }/my-ip/api`
     );
 
@@ -41,7 +41,7 @@ export default function MyIP() {
         description="Effortlessly Find Your IP Address with Just One Click"
         openGraph={{
           type: "website",
-          url: "https://equipage.vercel.app/my-ip",
+          url: "https://www.equipage.dev/my-ip",
           title: "What is my IP?",
           description: "Effortlessly Find Your IP Address with Just One Click",
           images: [
