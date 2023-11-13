@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 import axios from "axios";
@@ -35,7 +36,7 @@ export default function MyIP() {
   // };
 
   return (
-    <Center h="100vh" flexDir="column">
+    <Center h="100vh" flexDir="column" px="6">
       <NextSeo
         title="What is my IP?"
         description="Effortlessly Find Your IP Address with Just One Click"
@@ -93,12 +94,13 @@ export default function MyIP() {
           computer.
         </Text>
       </Box>
-      <Box position="absolute" bottom={0}>
+      <Box position="absolute" top={0}>
         <KakaoAdFit
           unit_big="DAN-YCV4ENi87zDLZf0T"
           unit_small="DAN-Qdw5xOlsJkt2UMXm"
         />
       </Box>
+      <Footer />
     </Center>
   );
 }

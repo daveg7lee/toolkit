@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
 import { copyToclipboard } from "@/utils";
 import {
@@ -113,12 +114,13 @@ export default function ShortenURL() {
           </Button>
         </HStack>
       )}
-      <Box position="absolute" bottom={0}>
+      <Box position="absolute" top={0}>
         <KakaoAdFit
           unit_big="DAN-tUahvotQFhWZyh41"
           unit_small="DAN-ONaUt6yWfIY6Q9aY"
         />
       </Box>
+      <Footer />
     </Center>
   );
 }
