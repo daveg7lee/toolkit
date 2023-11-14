@@ -17,12 +17,6 @@ export const GET = async (_: any, { params }: any) => {
       },
     });
   }
-
-  // If a row is returned, increment the visit_count for the link with the provided slug
-  if (rows[0]) {
-    await sql`UPDATE links SET visit_count = visit_count + 1 WHERE alias = ${params.slug}`;
-  }
-
   // Redirect to the target of the first row (the selected link)
   return NextResponse.redirect(rows[0].target, 302);
 };
