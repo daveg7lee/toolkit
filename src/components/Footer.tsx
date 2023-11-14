@@ -8,6 +8,8 @@ export default function Footer() {
       justifyContent="center"
       alignItems="center"
       py="8"
+      bgColor="white"
+      w="full"
     >
       <Text>
         Made by ✨{" "}

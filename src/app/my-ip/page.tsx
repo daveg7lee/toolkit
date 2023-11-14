@@ -26,7 +26,7 @@ export default function MyIP() {
   // };
 
   return (
-    <Center h="100vh" flexDir="column" px="6">
+    <Center minH="100vh" flexDir="column" px="6" py="32">
       <Text fontSize="lg" fontWeight="semibold" color="gray.600">
         🌎 Your IP Address is...
       </Text>
