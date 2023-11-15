@@ -6,9 +6,18 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Equipage",
   description: "Discover Your Ultimate Real-Life Toolkit - All in One Place!",
+  applicationName: "Equipage",
+  authors: { url: "https://kihyun.me", name: "Kihyun Lee" },
+  keywords: ["tools", "online tools", "equipages", "toolbox", "toolkit"],
   openGraph: {
     type: "website",
     url: "https://equipage.dev",
+    title: "Equipage",
+    description: "Discover Your Ultimate Real-Life Toolkit - All in One Place!",
+  },
+  twitter: {
+    card: "summary",
+    creator: "@daveg7lee",
     title: "Equipage",
     description: "Discover Your Ultimate Real-Life Toolkit - All in One Place!",
   },
@@ -44,7 +53,7 @@ export default function Home() {
             fontSize="lg"
             fontWeight="semibold"
           >
-            🔗 Shorten your link!
+            🔗 Shorten my link!
           </Box>
         </Link>
       </SimpleGrid>

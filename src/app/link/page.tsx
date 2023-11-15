@@ -5,12 +5,27 @@ import { Box, Center, Text } from "@chakra-ui/react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shorten your link!",
+  title: "Equipage | Shorten my link!",
   description: "Effortlessly Shorten Your link with Just One Click",
+  applicationName: "Equipage",
+  authors: { url: "https://kihyun.me", name: "Kihyun Lee" },
+  keywords: [
+    "url shorten",
+    "link shorten",
+    "Shorten Long URLs",
+    "Link Shortening Tool",
+    "Easy URL Shortener",
+  ],
   openGraph: {
     type: "website",
     url: "https://www.equipage.dev/my-ip",
-    title: "Shorten your link!",
+    title: "Equipage | Shorten my link!",
+    description: "Effortlessly Shorten Your link with Just One Click",
+  },
+  twitter: {
+    card: "summary",
+    creator: "@daveg7lee",
+    title: "Equipage | Shorten my link!",
     description: "Effortlessly Shorten Your link with Just One Click",
   },
 };
@@ -25,7 +40,7 @@ export default function ShortenURL() {
       gap="22px"
     >
       <Text fontSize="2xl" fontWeight="semibold" color="gray.600">
-        🔗 Shorten your link!
+        🔗 Shorten my link!
       </Text>
       <AddLink />
       <Box position="absolute" top={0}>

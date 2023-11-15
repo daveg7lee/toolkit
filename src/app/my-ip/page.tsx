@@ -7,9 +7,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Equipage | What is my IP?",
   description: "Effortlessly Find Your IP Address with Just One Click",
+  applicationName: "Equipage",
+  authors: { url: "https://kihyun.me", name: "Kihyun Lee" },
+  keywords: ["my ip", "ip address", "ipv4", "ipv6", "ip"],
   openGraph: {
     type: "website",
     url: "https://www.equipage.dev/my-ip",
+    title: "Equipage | What is my IP?",
+    description: "Effortlessly Find Your IP Address with Just One Click",
+  },
+  twitter: {
+    card: "summary",
+    creator: "@daveg7lee",
     title: "Equipage | What is my IP?",
     description: "Effortlessly Find Your IP Address with Just One Click",
   },
