@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import KakaoAdFit from "@/components/KakaoAdfit";
 import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Center flexDir="column" h="100vh">
+      <Box position="absolute" top={0}>
+        <KakaoAdFit
+          unit_big="DAN-vFORmb6ajtcxYFnA"
+          unit_small="DAN-sRcvNURVe0WRiLZP"
+        />
+      </Box>
       <Heading mb="10" fontSize="5xl">
         🧰 Equipage
       </Heading>
