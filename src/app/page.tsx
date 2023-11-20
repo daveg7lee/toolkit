@@ -63,6 +63,19 @@ export default function Home() {
             🔗 Shorten my link!
           </Box>
         </Link>
+        <Link href="/Dday-calculator">
+          <Box
+            py="6"
+            px="12"
+            borderRadius="lg"
+            border="1px solid"
+            borderColor="gray.300"
+            fontSize="lg"
+            fontWeight="semibold"
+          >
+            🤖 D-day Calculator
+          </Box>
+        </Link>
       </SimpleGrid>
       <Footer />
     </Center>
