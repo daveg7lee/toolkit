@@ -1,3 +1,4 @@
+import Adsense from "@/components/Adsense";
 import Footer from "@/components/Footer";
 import IP from "@/components/IP";
 import KakaoAdFit from "@/components/KakaoAdfit";
@@ -70,6 +71,9 @@ export default function MyIP() {
           unit_small="DAN-Qdw5xOlsJkt2UMXm"
         />
       </Box> */}
+      <Box position="absolute" top={0}>
+        <Adsense />
+      </Box>
       <Footer />
     </Center>
   );

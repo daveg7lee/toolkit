@@ -1,3 +1,4 @@
+import Adsense from "@/components/Adsense";
 import CalculateDday from "@/components/CalculateDday";
 import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
@@ -37,6 +38,9 @@ export default function DdayCalculator() {
           unit_small="DAN-lIPbgKrP6TYCJthv"
         />
       </Box> */}
+      <Box position="absolute" top={0}>
+        <Adsense />
+      </Box>
       <Footer />
     </Center>
   );

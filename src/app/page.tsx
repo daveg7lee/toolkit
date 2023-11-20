@@ -1,3 +1,4 @@
+import Adsense from "@/components/Adsense";
 import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
 import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
@@ -33,10 +34,13 @@ export default function Home() {
           unit_small="DAN-sRcvNURVe0WRiLZP"
         />
       </Box> */}
+      <Box position="absolute" top={0}>
+        <Adsense />
+      </Box>
       <Heading mb="10" fontSize="5xl">
         🧰 Equipage
       </Heading>
-      <SimpleGrid columns={[1, 2, 3, 4]} gap="12px">
+      <SimpleGrid columns={[1, 2, 2, 3]} gap="12px">
         <Link href="/my-ip">
           <Box
             py="6"

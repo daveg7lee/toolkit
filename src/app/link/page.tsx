@@ -1,4 +1,5 @@
 import AddLink from "@/components/AddLink";
+import Adsense from "@/components/Adsense";
 import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
 import { Box, Center, Text } from "@chakra-ui/react";
@@ -49,6 +50,9 @@ export default function ShortenURL() {
           unit_small="DAN-ONaUt6yWfIY6Q9aY"
         />
       </Box> */}
+      <Box position="absolute" top={0}>
+        <Adsense />
+      </Box>
       <Footer />
     </Center>
   );
