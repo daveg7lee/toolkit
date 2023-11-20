@@ -1,5 +1,7 @@
 import CalculateDday from "@/components/CalculateDday";
-import { Center, Text } from "@chakra-ui/react";
+import Footer from "@/components/Footer";
+import KakaoAdFit from "@/components/KakaoAdfit";
+import { Box, Center, Text } from "@chakra-ui/react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,6 +31,13 @@ export default function DdayCalculator() {
         🤖 D-day Calculator
       </Text>
       <CalculateDday />
+      <Box position="absolute" top={0}>
+        <KakaoAdFit
+          unit_big="DAN-F0jtjKKAc7GHoZFb"
+          unit_small="DAN-lIPbgKrP6TYCJthv"
+        />
+      </Box>
+      <Footer />
     </Center>
   );
 }
