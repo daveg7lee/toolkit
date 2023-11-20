@@ -28,15 +28,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Center flexDir="column" h="100vh">
-      {/* <Box position="absolute" top={0}>
+      <Box position="absolute" top={0}>
         <KakaoAdFit
           unit_big="DAN-vFORmb6ajtcxYFnA"
           unit_small="DAN-sRcvNURVe0WRiLZP"
         />
-      </Box> */}
-      <Box position="absolute" top={0}>
-        <Adsense />
       </Box>
+      {/* <Box position="absolute" top={0}>
+        <Adsense />
+      </Box> */}
       <Heading mb="10" fontSize="5xl">
         🧰 Equipage
       </Heading>

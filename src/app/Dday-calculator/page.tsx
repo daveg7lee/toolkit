@@ -32,15 +32,15 @@ export default function DdayCalculator() {
         🤖 D-day Calculator
       </Text>
       <CalculateDday />
-      {/* <Box position="absolute" top={0}>
+      <Box position="absolute" top={0}>
         <KakaoAdFit
           unit_big="DAN-F0jtjKKAc7GHoZFb"
           unit_small="DAN-lIPbgKrP6TYCJthv"
         />
-      </Box> */}
-      <Box position="absolute" top={0}>
-        <Adsense />
       </Box>
+      {/* <Box position="absolute" top={0}>
+        <Adsense />
+      </Box> */}
       <Footer />
     </Center>
   );
