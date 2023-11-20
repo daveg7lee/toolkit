@@ -43,12 +43,12 @@ export default function ShortenURL() {
         🔗 Shorten my link!
       </Text>
       <AddLink />
-      <Box position="absolute" top={0}>
+      {/* <Box position="absolute" top={0}>
         <KakaoAdFit
           unit_big="DAN-tUahvotQFhWZyh41"
           unit_small="DAN-ONaUt6yWfIY6Q9aY"
         />
-      </Box>
+      </Box> */}
       <Footer />
     </Center>
   );

@@ -64,12 +64,12 @@ export default function MyIP() {
           computer.
         </Text>
       </Box>
-      <Box position="absolute" top={0}>
+      {/* <Box position="absolute" top={0}>
         <KakaoAdFit
           unit_big="DAN-YCV4ENi87zDLZf0T"
           unit_small="DAN-Qdw5xOlsJkt2UMXm"
         />
-      </Box>
+      </Box> */}
       <Footer />
     </Center>
   );
