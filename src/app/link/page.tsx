@@ -40,7 +40,7 @@ export default function ShortenURL() {
       mx="auto"
       gap="22px"
     >
-      <Text fontSize="2xl" fontWeight="semibold" color="gray.600">
+      <Text fontSize="2xl" fontWeight="semibold" color="gray.600" as="h1">
         🔗 Shorten my link!
       </Text>
       <AddLink />

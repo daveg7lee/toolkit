@@ -37,7 +37,7 @@ export default function Home() {
       {/* <Box position="absolute" top={0}>
         <Adsense />
       </Box> */}
-      <Heading mb="10" fontSize="5xl">
+      <Heading mb="10" fontSize="5xl" as="h1">
         🧰 Equipage
       </Heading>
       <SimpleGrid columns={[1, 2, 2, 3]} gap="12px">

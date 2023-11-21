@@ -37,7 +37,7 @@ export default function MyIP() {
 
   return (
     <Center minH="100vh" flexDir="column" px="6" py="32">
-      <Text fontSize="lg" fontWeight="semibold" color="gray.600">
+      <Text fontSize="lg" fontWeight="semibold" color="gray.600" as="h1">
         🌎 Your IP Address is...
       </Text>
       <IP />

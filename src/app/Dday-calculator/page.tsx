@@ -28,7 +28,13 @@ export const metadata: Metadata = {
 export default function DdayCalculator() {
   return (
     <Center h="100vh" flexDir="column" maxW={["320px", "728px"]} mx="auto">
-      <Text fontSize="2xl" fontWeight="semibold" color="gray.600" mb="52px">
+      <Text
+        fontSize="2xl"
+        fontWeight="semibold"
+        color="gray.600"
+        mb="52px"
+        as="h1"
+      >
         🤖 D-day Calculator
       </Text>
       <CalculateDday />
