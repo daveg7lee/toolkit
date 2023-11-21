@@ -16,12 +16,14 @@ export const metadata: Metadata = {
     url: "https://www.equipage.dev/my-ip",
     title: "Equipage | What is my IP?",
     description: "Effortlessly Find Your IP Address with Just One Click",
+    images: "/og.png",
   },
   twitter: {
     card: "summary",
     creator: "@daveg7lee",
     title: "Equipage | What is my IP?",
     description: "Effortlessly Find Your IP Address with Just One Click",
+    images: "/og.png",
   },
 };
 

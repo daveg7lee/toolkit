@@ -16,12 +16,14 @@ export const metadata: Metadata = {
     url: "https://equipage.dev",
     title: "Equipage",
     description: "Discover Your Ultimate Real-Life Toolkit - All in One Place!",
+    images: "/og.png",
   },
   twitter: {
     card: "summary",
     creator: "@daveg7lee",
     title: "Equipage",
     description: "Discover Your Ultimate Real-Life Toolkit - All in One Place!",
+    images: "/og.png",
   },
 };
 

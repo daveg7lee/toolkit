@@ -16,12 +16,14 @@ export const metadata: Metadata = {
     url: "https://www.equipage.dev/Dday-calculator",
     title: "Equipage | D-day Calculator",
     description: "Effortlessly Find how many days left with Just One Click",
+    images: "/og.png",
   },
   twitter: {
     card: "summary",
     creator: "@daveg7lee",
     title: "Equipage | D-day Calculator",
     description: "Effortlessly Find how many days left with Just One Click",
+    images: "/og.png",
   },
 };
 

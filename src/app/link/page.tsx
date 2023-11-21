@@ -22,12 +22,14 @@ export const metadata: Metadata = {
     url: "https://www.equipage.dev/my-ip",
     title: "Equipage | Shorten my link!",
     description: "Effortlessly Shorten Your link with Just One Click",
+    images: "/og.png",
   },
   twitter: {
     card: "summary",
     creator: "@daveg7lee",
     title: "Equipage | Shorten my link!",
     description: "Effortlessly Shorten Your link with Just One Click",
+    images: "/og.png",
   },
 };
 
