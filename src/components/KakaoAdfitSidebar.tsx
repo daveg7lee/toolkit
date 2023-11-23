@@ -21,7 +21,6 @@ export default function KakaoAdFitSidebar({
     }
 
     const ins = document.createElement("ins");
-    const script = document.createElement("script");
 
     ins.className = "kakao_ad_area";
     ins.style.display = "none;";
@@ -30,16 +29,9 @@ export default function KakaoAdFitSidebar({
     ins.setAttribute("data-ad-height", "600");
     ins.setAttribute("data-ad-unit", unit);
 
-    script.async = true;
-    script.type = "text/javascript";
-    script.src = "//t1.daumcdn.net/kas/static/ba.min.js";
-
     document
       .querySelector(`.aside__kakaoAdFit_sidebar_${position}`)
       ?.appendChild(ins);
-    document
-      .querySelector(`.aside__kakaoAdFit_sidebar_${position}`)
-      ?.appendChild(script);
 
     // 광고 로딩 여부 상태 변경
     adRef.current = true;

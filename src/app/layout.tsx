@@ -40,6 +40,11 @@ export default function RootLayout({
         `,
           }}
         />
+        <Script
+          async={true}
+          type="text/javascript"
+          src="//t1.daumcdn.net/kas/static/ba.min.js"
+        />
       </body>
     </html>
   );

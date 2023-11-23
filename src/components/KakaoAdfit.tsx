@@ -18,7 +18,6 @@ export default function KakaoAdFit({ unit_big, unit_small }: IKakaoAdfitProps) {
     }
 
     const ins = document.createElement("ins");
-    const script = document.createElement("script");
 
     ins.className = "kakao_ad_area";
     ins.style.display = "none;";
@@ -35,12 +34,7 @@ export default function KakaoAdFit({ unit_big, unit_small }: IKakaoAdfitProps) {
       ins.setAttribute("data-ad-unit", unit_big);
     }
 
-    script.async = true;
-    script.type = "text/javascript";
-    script.src = "//t1.daumcdn.net/kas/static/ba.min.js";
-
     document.querySelector(".aside__kakaoAdFit")?.appendChild(ins);
-    document.querySelector(".aside__kakaoAdFit")?.appendChild(script);
 
     // 광고 로딩 여부 상태 변경
     adRef.current = true;
