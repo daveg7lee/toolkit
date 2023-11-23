@@ -2,6 +2,7 @@ import Adsense from "@/components/Adsense";
 import CalculateDday from "@/components/CalculateDday";
 import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
+import KakaoAdFitSidebar from "@/components/KakaoAdfitSidebar";
 import { Box, Center, Text } from "@chakra-ui/react";
 import { Metadata } from "next";
 
@@ -45,6 +46,20 @@ export default function DdayCalculator() {
           unit_big="DAN-F0jtjKKAc7GHoZFb"
           unit_small="DAN-lIPbgKrP6TYCJthv"
         />
+      </Box>
+      <Box
+        position="absolute"
+        right={0}
+        display={{ base: "none", md: "none", lg: "block" }}
+      >
+        <KakaoAdFitSidebar unit="DAN-s1vjHUZPhw33gGKM" position="right" />
+      </Box>
+      <Box
+        position="absolute"
+        left={0}
+        display={{ base: "none", md: "none", lg: "block" }}
+      >
+        <KakaoAdFitSidebar unit="DAN-GnJRFffO9sVgQ8Ew" position="left" />
       </Box>
       {/* <Box position="absolute" top={0}>
         <Adsense />

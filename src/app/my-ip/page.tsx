@@ -2,6 +2,7 @@ import Adsense from "@/components/Adsense";
 import Footer from "@/components/Footer";
 import IP from "@/components/IP";
 import KakaoAdFit from "@/components/KakaoAdfit";
+import KakaoAdFitSidebar from "@/components/KakaoAdfitSidebar";
 import { Box, Center, Text } from "@chakra-ui/react";
 import { Metadata } from "next";
 
@@ -72,6 +73,20 @@ export default function MyIP() {
           unit_big="DAN-YCV4ENi87zDLZf0T"
           unit_small="DAN-Qdw5xOlsJkt2UMXm"
         />
+      </Box>
+      <Box
+        position="absolute"
+        right={0}
+        display={{ base: "none", md: "none", lg: "block" }}
+      >
+        <KakaoAdFitSidebar unit="DAN-s1vjHUZPhw33gGKM" position="right" />
+      </Box>
+      <Box
+        position="absolute"
+        left={0}
+        display={{ base: "none", md: "none", lg: "block" }}
+      >
+        <KakaoAdFitSidebar unit="DAN-GnJRFffO9sVgQ8Ew" position="left" />
       </Box>
       {/* <Box position="absolute" top={0}>
         <Adsense />

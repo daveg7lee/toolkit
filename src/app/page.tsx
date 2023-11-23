@@ -1,6 +1,7 @@
 import Adsense from "@/components/Adsense";
 import Footer from "@/components/Footer";
 import KakaoAdFit from "@/components/KakaoAdfit";
+import KakaoAdFitSidebar from "@/components/KakaoAdfitSidebar";
 import { Box, Center, Heading, SimpleGrid } from "@chakra-ui/react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -36,13 +37,27 @@ export default function Home() {
           unit_small="DAN-sRcvNURVe0WRiLZP"
         />
       </Box>
+      <Box
+        position="absolute"
+        right={0}
+        display={{ base: "none", md: "none", lg: "block" }}
+      >
+        <KakaoAdFitSidebar unit="DAN-s1vjHUZPhw33gGKM" position="right" />
+      </Box>
+      <Box
+        position="absolute"
+        left={0}
+        display={{ base: "none", md: "none", lg: "block" }}
+      >
+        <KakaoAdFitSidebar unit="DAN-GnJRFffO9sVgQ8Ew" position="left" />
+      </Box>
       {/* <Box position="absolute" top={0}>
         <Adsense />
       </Box> */}
       <Heading mb="10" fontSize="5xl" as="h1">
         🧰 Equipage
       </Heading>
-      <SimpleGrid columns={[1, 2, 2, 3]} gap="12px">
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 2, xl: 3 }} gap="12px">
         <Link href="/my-ip">
           <Box
             py="6"
